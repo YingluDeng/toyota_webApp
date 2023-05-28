@@ -1,5 +1,6 @@
 import './globals.css'
 import Navbar from './components/navbar/Navbar';
+import Home from './components/homePage/Home';
 
 export const metadata = {
   title: 'Toyota Designer Platform',
