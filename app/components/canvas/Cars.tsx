@@ -11,13 +11,13 @@ const Cars = () => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={0.35} groundColor='white' />
       {/* red light */}
       <spotLight
-        position={[250, 100, 50]}
+        position={[250, 100, 20]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={2}
         castShadow
         shadow-mapSize={1024}
         color={0xecad9e}
@@ -26,7 +26,7 @@ const Cars = () => {
 
       {/* green light  */}
       <spotLight
-        position={[-70, 100, 50]}
+        position={[-50, 100, 10]}
         angle={0.12}
         penumbra={1}
         intensity={1}
@@ -34,12 +34,12 @@ const Cars = () => {
         shadow-mapSize={1024}
         color={0xd6d587}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={2} />
       <primitive
         object={car.scene}
         scale={2.5}
-        position={[1, -2, 0]}
-        rotation={[0.06, -0.11, -0.05]}
+        position={[2, -2, -0.5]}
+        rotation={[0.03, 0.6, -0.02]}
       />
     </mesh>
   );
