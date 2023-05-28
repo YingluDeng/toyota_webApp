@@ -1,15 +1,11 @@
 import Image from "next/image";
+import CarsCanvas from "./components/canvas/Cars";
+import Container from "./components/Container"
 
 export default function Home() {
   return (
-    <div>
-      <Image 
-            alt="background"
-            className="flex w-full"
-            height="100000"
-            width="100000"
-            src="/images/bg_2.jpeg"
-            />
+    <div className="w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url(/images/bg_2.jpeg)" }}>
+      <CarsCanvas />
     </div>
   )
 }

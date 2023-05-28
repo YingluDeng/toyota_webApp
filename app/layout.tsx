@@ -1,6 +1,6 @@
 import './globals.css'
 import Navbar from './components/navbar/Navbar';
-import Home from './components/homePage/Home';
+import CarsCanvas from './components/canvas/Cars';
 
 export const metadata = {
   title: 'Toyota Designer Platform',
@@ -16,7 +16,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <div className="pb-20 pt-28">
+          {children}
+        </div>
+        
       </body>
     </html>
   )
