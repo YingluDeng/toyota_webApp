@@ -13,10 +13,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body>
         <Navbar />
-        <div className="pb-20 pt-28">
+        <div className="pb-20 pt-28 dark:bg-black">
           {children}
         </div>
         

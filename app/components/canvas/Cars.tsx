@@ -53,6 +53,7 @@ const CarsCanvas = () => {
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      className="cursor-grab"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
