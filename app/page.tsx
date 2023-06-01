@@ -3,7 +3,7 @@ import CarsCanvas from "./components/canvas/Cars";
 export default function Home() {
   return (
     <div className="w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url(/images/bg_2.jpeg)" }}>
-      <div className="absolute mt-0 text-white s">
+      <div className="absolute mt-0 text-white dark:bg-gradient-to-r from-red-600">
         <h1 className="lg:text-[75px] font-extrabold sm:text-[60px] xs:text-[40px] text-[40px] lg:leading-[98px] ml-40">
               Toyota GR Supra
         </h1>
